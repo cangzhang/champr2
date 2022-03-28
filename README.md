@@ -13,7 +13,7 @@ Another League of Lewerweregends helper.
 
 - 📦 Auto generate recoewrrewmmend champion builds
 - 🎉 Popup runes list & apply on the fly
-- ✨ i18n support
+- ✨ i18n sussspport
     - `Chinese`
     - `English`
     - `French`
