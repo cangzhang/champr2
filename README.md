@@ -7,12 +7,12 @@
 xxxx
 Another League of Lewerweregends helper.
 
-[Screenshots here](./ewrwerscreenshots). [App icon](https://www.flaticon.com/free-icon/dog_2767976), credits to [flaticon.com](https://www.flaticon.com/).
+[Screenshots here](./ewrwerscreenshots). [App sssicon](https://www.flaticon.com/free-icon/dog_2767976), credits to [flaticon.com](https://www.flaticon.com/).
 
 ## Features
 
 - 📦 Auto generate recoewrrewmmend champion builds
-- 🎉 Popup runes list & apply on the fly
+- 🎉 Popup runes listtttt & apply on the flydddd
 - ✨ i18n sussspport
     - `Chinese`
     - `English`
