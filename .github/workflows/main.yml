@@ -4,9 +4,8 @@ name: action test
 
 on:
   push:
-    branches:
-      - master
-      - build
+    tags:
+    - 'v*'
 
 jobs:
   # This workflow contains a single job called "build"
@@ -17,14 +16,16 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
-    - uses: actions/setup-node@v1
-      with:
-        node-version: '16.x'
+    - name: Build & release
+      shell: pwsh
+      run: |
+        md -Name ./artifacts -Force
+        Compress-Archive -Path ./app -DestinationPath ./artifacts/app.zip
 
     - name: Create Release
       uses: ncipollo/release-action@v1
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
         body: "[FAQ](https://github.com/cangzhang/champ-r/wiki/FAQ)\n[CHNAGELOG](https://github.com/cangzhang/champ-r/blob/main/CHANGELOG.md)"
-        artifacts: "./screenshots/*.webp,./screenshots/*.png,"
+        artifacts: "./LICENSE,./artifacts/app.zip"
 
